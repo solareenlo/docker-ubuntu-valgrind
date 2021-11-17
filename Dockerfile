@@ -6,4 +6,6 @@ RUN apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get install valgrind -y && \
 	rm -fr /var/lib/apt/lists/*
 
+WORKDIR /code
+
 CMD /bin/bash
